@@ -10,7 +10,7 @@ This project will recreate that processor but with pipelined instructions rather
 The goal of the project is to implement a processor with Pipelining. I plan to have a greater understanding of the software (Xilinx ISE 14.7) by the end.
 
 ## Components
-I started this project with the ALU. At the time, I could not write up Verilog Modules. I am keeping all of the components of the ALU (ADD, AND, NOT, OR) will be schematics for the sake of time. Future components will be created with Verilog, but some may consist of schematics.
+The lower blocks (such as muxes, ALU components, etc) are written in Verilog. The top modules are mostly schematics. 
 
 ## Bugs
 TBA
