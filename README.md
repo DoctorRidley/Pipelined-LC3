@@ -25,4 +25,3 @@ Once the ALU is complete, will work on other components in the following order:
 3. Sign Extension
 4. Datapaths for Instructions
 5. Finite State Machine
-6. 
