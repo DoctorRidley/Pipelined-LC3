@@ -22,7 +22,7 @@ module LC3_ALU(
     input [15:0] B,
     input [15:0] A,
     input [1:0] ALUK,
-    output reg [15:0] ALU //Not making ALU an output returns an error
+	output reg [15:0] ALU //Not making ALU a reg returns an error
     );
 	 
 	 // from the 30th bit
