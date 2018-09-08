@@ -16,7 +16,7 @@ The lower blocks (such as muxes, ALU components, etc) are written in Verilog. Th
 TBA
 
 ## Currently Implemented
-Most of the ALU has been complete and will be pushed after testing is complete.
+The ALU is complete. I am currently working on getting the various muxes (addr muxes, register muxes, etc) completed. 
 
 ## Future Plans
 Once the ALU is complete, will work on other components in the following order:
