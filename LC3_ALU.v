@@ -25,15 +25,14 @@ module LC3_ALU(
 	output reg [15:0] ALU //Not making ALU a reg returns an error
     );
 	 
-	 // from the 30th bit
-	 always @(*) begin
+    // from the 30th bit
+    always @(*) begin
         case (ALUK)
-		      2'd0: ALU = A + B;
-				2'd1: ALU = A & B;
-				2'd2: ALU = ~A; // Invert contents of selected register (wired to A)
-				2'd3: ALU = A | B;
-	         default: $display("ERROR: INVALID ALUK SIGNAL");
-				// Non-blocking assignments because the ALU is combinational
-		  endcase
+	    2'd0: ALU = A + B;
+	    2'd1: ALU = A & B;
+	    2'd2: ALU = ~A; // Invert contents of selected register (wired to A)
+	    2'd3: ALU = A | B;
+	    default: $display("ERROR: INVALID ALUK SIGNAL"); // Non-blocking assignments because the ALU is combinational
+	endcase
     end
 endmodule
