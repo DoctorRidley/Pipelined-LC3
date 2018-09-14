@@ -25,6 +25,4 @@ module LC3_ZEXT(
 	 always @(*) begin
 	     assign OUT = 0 | IN; // 0 | IN = IN
     end
-	     
-
 endmodule
