@@ -33,17 +33,17 @@ module LC3_RegisterFile(
     integer i;
 	 
     always @(posedge clk) begin
-	     if (LD) begin
-		      for (i = 0; i < 16; i = i + 1) begin // Need to write to reg first
-		          R[DR][i] = data[i]; // R[DR] <--- data
-		      end
-		  end
-	 end
+        if (LD) begin
+	    for (i = 0; i < 16; i = i + 1) begin // Need to write to reg first
+	        R[DR][i] = data[i]; // R[DR] <--- data
+	    end
+        end
+    end
 	 
-	 always @(*) begin
-	     for (i = 0; i < 16; i = i + 1) begin
+    always @(*) begin
+        for (i = 0; i < 16; i = i + 1) begin
             SR1OUT[i] = R[SR1][i]; // SR1OUT <--- R[SR1]
-		      SR2OUT[i] = R[SR2][i]; // SR2OUT <--- R[SR2]
-	     end
-	 end
+	    SR2OUT[i] = R[SR2][i]; // SR2OUT <--- R[SR2]
+	end
+    end
 endmodule
