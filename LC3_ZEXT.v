@@ -22,7 +22,7 @@ module LC3_ZEXT(
     input [7:0] IN,
     output reg [15:0] OUT
     );
-	 always @(*) begin
-	     assign OUT = 0 | IN; // 0 | IN = IN
+    always @(*) begin
+        assign OUT = 0 | IN; // 0 | IN = IN
     end
 endmodule
