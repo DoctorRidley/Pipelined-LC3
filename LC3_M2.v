@@ -25,14 +25,11 @@ module LC3_M2(
     output reg [15:0] O
     );
 
-	 always @(*) begin
+    always @(*) begin
         case (S)
-		      1'd0: O = A;
-				1'd1: O = B;
-	         default: $display("ERROR: INVALID MUX SIGNAL");
-				// Non-blocking assignments because the mux is combinational
-		  endcase
+            1'd0: O = A;
+	    1'd1: O = B;
+	    default: $display("ERROR: INVALID MUX SIGNAL"); // Non-blocking assignments because the mux is combinational
+	endcase
     end
-
-
 endmodule
