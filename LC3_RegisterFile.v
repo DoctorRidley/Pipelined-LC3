@@ -35,7 +35,7 @@ module LC3_RegisterFile(
     always @(posedge clk) begin
         if (LD) begin
 	    for (i = 0; i < 16; i = i + 1) begin // Need to write to reg first
-	        R[DR][i] = data[i]; // R[DR] <--- data
+		    R[DR][i] <= data[i]; // R[DR] <--- data
 	    end
         end
     end
