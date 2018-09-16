@@ -27,6 +27,6 @@ module LC3_REG(
 
     always @(posedge clk) begin // Occurs only on rising clock edge
         if (LD) // Check for LD signal from FSM, won't check clk b/c of posedge
-	    OUT = IN;
+	    OUT <= IN;
     end
 endmodule
